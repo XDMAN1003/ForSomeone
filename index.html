@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons.flaticon.com/png/512/677/premium/677684.png?token=exp=1652965391~hmac=932390e6a8fb5b056d3352c641fa8301"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+    <title>告白彩排</title>
+    <style>
+        body{
+            background-color: #fffff0;
+        }
+      h3,
+      h6 {
+        margin: 5px;
+        text-align: center;
+        color: #542f2a;
+        font-weight: 500;
+        font-family: "ZCOOL KuaiLe";
+      }
+      .btn,
+      .btn:active {
+        color: #542f2a;
+        border-color: #542f2a;
+        font-weight: 550;
+        width: 50vw;
+        font-size: 1.4rem;
+        font-family: "ZCOOL KuaiLe";
+      }
+      .btn:hover {
+        background-color: #542f2a;
+        color: #fffff0;
+      }
+      .container-fluid {
+        min-height: 100vh;
+      }
+      .intro {
+        padding-top: 35vh;
+      }
+      .body {
+        display: none;
+        margin-top: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container-fluid h-100 w-100">
+      <div class="intro">
+        <div class="d-flex justify-content-center">
+          <img src="love.png" alt="Love Letter" width="140px" />
+        </div>
+        <h3>专属给江晓萦520小惊喜</h3>
+        <div class="d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="showLetter()"
+          >
+            打开内心的秘密
+          </button>
+        </div>
+      </div>
+      <div class="body">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="zoo.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="Genting.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="child.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="Pangkor.jpg" class="d-block w-100" alt="..." />
+              </div>
+            <div class="carousel-item">
+              <img src="Love2.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h3>十句搭讪 百句晚安 千句闲聊 万句废话</h3>
+        <h3>只为有一天在婚礼上听到一句我爱你</h3>
+      </div>
+    </div>
+    <script>
+      function showLetter() {
+        //alert("Haha");
+        document.getElementsByClassName("intro")[0].style.display = "none";
+        document.getElementsByClassName("body")[0].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
